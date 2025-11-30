@@ -1,7 +1,7 @@
 <!doctype html>
 <html data-htmlattr="htmlAttributes">
   <head>
-    <!-- Manifest PWA LOCAL -->
+    <!-- Manifest PWA -->
     <link rel="manifest" href="/manifest.json">
 
     <meta charset="utf-8">
@@ -9,16 +9,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--!meta-->
 
-    <!--!googleAnalyticsScript-->
-
-    <!-- Start Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://encorto-frontend.vercel.app/static/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://encorto-frontend.vercel.app/static/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://encorto-frontend.vercel.app/static/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://encorto-frontend.vercel.app/static/icons/safari-pinned-tab.svg" color="#c0392b">
-    <link rel="shortcut icon" href="https://encorto-frontend.vercel.app/static/icons/favicon.ico">
-    <meta name="msapplication-config" content="https://encorto-frontend.vercel.app/static/icons/browserconfig.xml">
-    <meta name="theme-color" content="#c0392b">
+    <!-- Favicons Encorto -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://encorto-frontend.vercel.app/static/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://encorto-frontend.vercel.app/static/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://encorto-frontend.vercel.app/static/icons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="https://encorto-frontend.vercel.app/static/icons/safari-pinned-tab.svg"
+      color="#c0392b"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://encorto-frontend.vercel.app/static/icons/favicon.ico"
+    />
+    <meta
+      name="msapplication-config"
+      content="https://encorto-frontend.vercel.app/static/icons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#c0392b" />
     <!-- End Favicons -->
 
     <!--!link-->
@@ -28,49 +50,58 @@
     <style>
       @font-face {
         font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Regular.ttf') format('truetype');
+        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Regular.ttf')
+          format('truetype');
         font-weight: 400;
         font-style: normal;
       }
 
       @font-face {
         font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Medium.ttf') format('truetype');
+        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Medium.ttf')
+          format('truetype');
         font-weight: 500;
         font-style: normal;
       }
 
       @font-face {
         font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-MediumItalic.ttf') format('truetype');
+        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-MediumItalic.ttf')
+          format('truetype');
         font-weight: 500;
         font-style: italic;
       }
 
       @font-face {
         font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-SemiBold.ttf')
+          format('truetype');
         font-weight: 600;
         font-style: normal;
       }
 
       @font-face {
         font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Bold.ttf') format('truetype');
+        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Bold.ttf')
+          format('truetype');
         font-weight: 700;
         font-style: normal;
       }
     </style>
 
     <script>
-      (function(document){
+      (function (document) {
         if (sessionStorage.fontsLoaded) {
-          document.documentElement.classList.add("fontsLoaded");
+          document.documentElement.classList.add('fontsLoaded');
         }
       })(document);
     </script>
 
-    <link rel="stylesheet" href="https://encorto-frontend.vercel.app/static/reactDates.css" />
+    <!-- Aquí Sharetribe mete scripts necesarios en <head> -->
+    <!--!script-->
+
+    <!-- React Dates CSS -->
+    <link rel="stylesheet" href="/static/reactDates.css" />
   </head>
 
   <body>
@@ -78,8 +109,9 @@
     <div id="portal-root"></div>
 
     <script>
-      (function(document){
-        var hasFeaturePromise = typeof window.Promise !== 'undefined' &&
+      (function (document) {
+        var hasFeaturePromise =
+          typeof window.Promise !== 'undefined' &&
           typeof window.Promise.reject !== 'undefined' &&
           Object.prototype.toString.call(Promise.resolve()) === '[object Promise]';
 
@@ -95,7 +127,10 @@
     <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
 
     <!-- Mapbox GL -->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
 
     <script>
@@ -103,8 +138,12 @@
     </script>
 
     <!-- Stripe -->
-    <script src="https://js.stripe.com/v3/"></script>
-    
-    <!-- END -->
+    <script src="https://js.stripe.com/v3/" crossorigin></script>
+
+    <!-- Placeholders críticos: Sharetribe mete aquí el JS de la app -->
+    <!--!preloadedStateScript-->
+    <!--!ssrScripts-->
+
+    <!-- Nota: si agregas más scripts externos, hay que permitirlos en server/csp.js -->
   </body>
 </html>
