@@ -1,14 +1,15 @@
 <!doctype html>
 <html data-htmlattr="htmlAttributes">
   <head>
+    <!-- Manifest PWA LOCAL -->
+    <link rel="manifest" href="/manifest.json">
+
     <meta charset="utf-8">
     <!--!title-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--!meta-->
 
     <!--!googleAnalyticsScript-->
-
-    <link rel="manifest" href="https://encorto-frontend.vercel.app/static/manifest.json">
 
     <!-- Start Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://encorto-frontend.vercel.app/static/icons/apple-touch-icon.png">
@@ -90,26 +91,26 @@
       })(document);
     </script>
 
-<!-- SDK de Mapbox desde CDN -->
-<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+    <!-- SDK de Mapbox desde CDN -->
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
 
-<!-- Mapbox GL -->
-<link href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet" />
-<script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <!-- Mapbox GL -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
 
-<script>
-  window.mapboxgl.accessToken = '%REACT_APP_MAPBOX_ACCESS_TOKEN%';
-</script>
+    <script>
+      window.mapboxgl.accessToken = '%REACT_APP_MAPBOX_ACCESS_TOKEN%';
+    </script>
 
-<!-- Stripe -->
-<script src="https://js.stripe.com/v3/"></script>
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
 
-<!-- Cargar CSS principal desde Vercel -->
-<link rel="stylesheet" href="https://encorto-frontend.vercel.app/static/css/main.4d2f768b.css" />
+    <!-- Cargar CSS principal desde Vercel -->
+    <link rel="stylesheet" href="https://encorto-frontend.vercel.app/static/css/main.4d2f768b.css" />
 
-<!-- Cargar JS principal desde Vercel -->
-<script src="https://encorto-frontend.vercel.app/static/js/main.8d22b0f3.js"></script>
+    <!-- Cargar JS principal desde Vercel -->
+    <script src="https://encorto-frontend.vercel.app/static/js/main.8d22b0f3.js"></script>
 
-<!-- END -->
+    <!-- END -->
   </body>
 </html>
